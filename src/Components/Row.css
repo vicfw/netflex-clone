@@ -1,0 +1,42 @@
+.row {
+  display: flex;
+  flex-direction: column;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin: 20px 0;
+}
+.row::-webkit-scrollbar {
+  display: none;
+}
+.row-title {
+  margin: 0 0 0 20px;
+  color: #fff;
+}
+.row-images {
+  display: flex;
+  padding: 0 20px;
+}
+.row-image {
+  max-height: 200px;
+  padding: 20px 0;
+  margin-right: 15px;
+  object-fit: contain;
+}
+
+.row-large-image {
+  max-height: 250px;
+  padding: 20px 0;
+  margin-right: 15px;
+  object-fit: contain;
+}
+
+.row-image:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+  opacity: 1;
+}
+
+.row-large-image:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
